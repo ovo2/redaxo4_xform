@@ -27,7 +27,7 @@ class rex_xform_action_redirect extends rex_xform_action_abstract
 		$u = $this->getElement(2);
 		$u1 = (int) $u;
 		
-		if($u == $u1)
+		if($u === $u1)
 		{
 			// id -> intern article
 			$url = rex_getUrl($u,'','',"&");
